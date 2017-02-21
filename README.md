@@ -37,3 +37,76 @@ Do not host DataNode, JobTracker or TaskTracker services on the same system.
 
 
 Q2.beginners commands for HDFS : 
+
+1.Put Command
+The ‘put’command feeds the data in to the HDFS.
+Syntax: hadoop dfs –put </source path> </destination path>
+
+2. List Command
+
+The ‘list’command displays all the available files inside a particular path.
+
+Syntax: hadoop dfs –ls </source path>
+
+3.Get Command
+
+The ‘get’ command copies the entire contents of the mentioned file to the local drive.
+
+Syntax: hadoop dfs –get </source path> </destination path>
+
+4. Make Directory Command
+
+The ‘mkdir’ command creates a new directory in the specified location.
+
+Syntax: hadoop dfs –mkdir </source path>
+
+5. View contents of particular file
+
+The ‘cat’ command is used to display all the contents of a file.
+
+Syntax: hadoop dfs –cat </path[filename]>
+
+6.Duplicating a Complete File inside the HDFS.
+
+The ‘copyfromlocal’ command will copy file from the local file system to the HDFS.
+
+Syntax: hadoop dfs –copyFromLocal </source path> </destination path>
+
+7.Duplicating a File from HDFS to the Local File System.
+
+The ‘copytolocal’ command will copy files from the HDFS to the local file system.
+
+Syntax: hadoop dfs –copyToLocal </source path> </destination path>
+
+8.Removing the File
+
+The command ‘rm’ will delete the file stored inside the HDFS.
+
+Syntax: hadoop dfs –rm </path[filename]>
+
+9.Run a DFS Filesystem to Check Utility
+
+The command ‘fsck’ is used for checking the consistency of a file system
+Syntax: hadoop fsck </file path>
+
+10.Run a Cluster Balancing Utility
+
+The command ‘balancer’ will check for work load on nodes in cluster and balance it.
+Syntax: hadoop balancer
+
+11.Check Directory Space in HDFS
+
+The command will show the file size occupied by file inside cluster.
+
+Syntax: hadoop dfs -du -s -h </file path>
+
+12. List all the Hadoop File System Shell Commands
+
+The ‘fs’ command lists down all the shell commands of the Hadoop File System.
+Syntax: hadoop fs [options]
+
+13.Asking for Help
+
+The ‘help’ command is for asking for help or querying a particular question.
+
+Command: hadoop fs -help
